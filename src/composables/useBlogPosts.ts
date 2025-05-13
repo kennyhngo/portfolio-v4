@@ -23,6 +23,13 @@ export async function useBlogPosts() {
     const raw = await modules[path]() as string;
     const { attributes: metadata } = fm<BlogMeta>(raw);
 
+    metadata.date = new Date(metadata.date).toLocaleDateString('en-US', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }).replace(/,([^,]*)$/, '$1');
+
     temp.push({
       ...metadata,
       link: `/blog/${metadata.slug}`,
