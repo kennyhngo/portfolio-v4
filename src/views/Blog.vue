@@ -38,5 +38,4 @@ onMounted(async () => {
   const { blogs: loadedBlogs } = await useBlogPosts();
   blogs.value = loadedBlogs.value;
 });
-
 </script>

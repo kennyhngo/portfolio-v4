@@ -10,11 +10,23 @@
       </li>
 
       <li class="navbar-item">
-        <router-link to="/blog" class="navbar-link" active-class="active">Blog</router-link>
+        <router-link to="/blog"
+          class="navbar-link"
+          :class="{ active: isBlogActive }"
+        >
+          Blog
+        </router-link>
       </li>
     </ul>
   </nav>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+const isBlogActive = computed(() => {
+  return route.path.startsWith('/blog');
+});
 </script>
