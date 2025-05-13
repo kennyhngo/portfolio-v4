@@ -172,6 +172,7 @@
   background: linear-gradient(to right, #ffaa40, #9c40ff, #ffaa40);
   background-size: 300% 100%;
   animation: animated-gradient 3s ease infinite;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -493,7 +494,7 @@
   color: var(--light-gray);
   border-radius: 0.75rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s, transform 0.1s;
 }
 
@@ -2536,11 +2537,6 @@ textarea.form-input::-webkit-resizer {
     --fs-7: 14px;
     font-weight: var(--fw-300);
   }
-
-  /* .separator:last-of-type {
-    margin: 15px 0;
-    opacity: 0;
-  } */
 
   .social-list {
     justify-content: center;
