@@ -16,55 +16,13 @@
     <h3 class="h3 service-title">What I'm doing</h3>
 
     <ul class="service-list">
-      <li class="service-item">
+      <li class="service-item" v-for="(service, index) in services" :key="index">
         <div class="service-icon-box">
-          <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+          <img :src="service.src" :alt="service.alt" width="40">
         </div>
-
         <div class="service-content-box">
-          <h4 class="h4 service-item-title">Web design</h4>
-          <p class="service-item-text">
-            The most modern and high-quality design made at a professional level.
-          </p>
-        </div>
-      </li>
-
-      <li class="service-item">
-        <div class="service-icon-box">
-          <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-        </div>
-
-        <div class="service-content-box">
-          <h4 class="h4 service-item-title">Web development</h4>
-          <p class="service-item-text">
-            High-quality development of sites at the professional level.
-          </p>
-        </div>
-      </li>
-
-      <li class="service-item">
-        <div class="service-icon-box">
-          <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-        </div>
-
-        <div class="service-content-box">
-          <h4 class="h4 service-item-title">Mobile apps</h4>
-          <p class="service-item-text">
-            Professional development of applications for iOS and Android.
-          </p>
-        </div>
-      </li>
-
-      <li class="service-item">
-        <div class="service-icon-box">
-          <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-        </div>
-
-        <div class="service-content-box">
-          <h4 class="h4 service-item-title">Photography</h4>
-          <p class="service-item-text">
-            I make high-quality photos of any category at a professional level.
-          </p>
+          <h4 class="h4 service-item-title">{{ service.title }}</h4>
+          <p class="service-item-text">{{ service.text }}</p>
         </div>
       </li>
     </ul>
@@ -73,6 +31,38 @@
 </template>
 
 <script setup lang="ts">
+import fullStackLogo from '@/assets/full-stack.svg';
+import gamePluginLogo from '@/assets/game-plugin.svg';
+import pickleballLogo from '@/assets/pickleball.svg';
+
+interface Service {
+  src: string;
+  alt: string;
+  title: string;
+  text: string;
+};
+
+const services: Service[] = [
+  {
+    src: fullStackLogo,
+    alt: 'Full stack development logo',
+    title: 'Full Stack Development',
+    text: 'Learning the whole tech stack to create a project-based learning web app.',
+  },
+  {
+    src: gamePluginLogo,
+    alt: 'Video game plugin logo',
+    title: 'Video Game Modding',
+    text: 'Reverse engineering game code to have extra fun with friends in private lobbies.'
+  },
+  {
+    src: pickleballLogo,
+    alt: 'Pickleball logo',
+    title: 'Pickleball',
+    text: 'I play pickleball almost every day, aiming to win a state or regional tournament.',
+  },
+];
+
 const aboutText = [
   "Hello there, I'm Kenny! I am a software engineer with a passion for both teaching and continuous learning. I was introduced to coding in high school and was instantly fascinated by the idea that we can create programs to solve problems, automate tasks, and bring ideas to life. The limitless creative potential of software development still inspires me every day.",
 
