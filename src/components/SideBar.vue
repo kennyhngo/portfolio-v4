@@ -1,5 +1,5 @@
 <template>
-<aside class="sidebar" data-sidebar>
+<aside class="sidebar" data-sidebar :class="{ active: isSidebarActive }">
   <div class="sidebar-info">
 
     <figure class="avatar-box">
@@ -11,7 +11,11 @@
       <p class="title">Software Engineer</p>
     </div>
 
-    <button class="info_more-btn" data-sidebar-btn>
+    <button 
+      class="info_more-btn" 
+      data-sidebar-btn
+      @click="toggleSidebar"
+    >
       <span>Show Contacts</span>
       <ion-icon name="chevron-down"></ion-icon>
     </button>
@@ -67,3 +71,11 @@
   </div>
 </aside>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+const isSidebarActive = ref<boolean>(false);
+function toggleSidebar() {
+  isSidebarActive.value = !isSidebarActive.value;
+}
+</script>
