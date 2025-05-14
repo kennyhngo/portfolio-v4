@@ -17,33 +17,14 @@
 
 <script setup lang="ts">
 const skills = [
-  {
-    name: 'Python',
-    level: 100,
-  },
-  {
-    name: 'Bash',
-    level: 90,
-  },
-  {
-    name: 'TypeScript',
-    level: 75,
-  },
-  {
-    name: 'Vue',
-    level: 75,
-  },
-  {
-    name: 'ABL Progress',
-    level: 55,
-  },
-  {
-    name: 'HTML',
-    level: 90,
-  },
-  {
-    name: 'CSS',
-    level: 80,
-  },
-];
+  { name: 'Python', level: 100 },
+  { name: 'Bash', level: 90 },
+  { name: 'TypeScript', level: 85 },
+  { name: 'Vue', level: 80 },
+  { name: 'ABL Progress', level: 55 },
+  { name: 'HTML', level: 90 },
+  { name: 'CSS', level: 80 },
+  { name: 'C++', level: 85 },
+  { name: 'Java', level: 70 },
+].sort((a, b) => b.level - a.level);
 </script>
