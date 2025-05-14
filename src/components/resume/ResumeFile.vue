@@ -1,7 +1,6 @@
 <template>
 <section class="download-resume">
-  <a href="/resume" target="_blank" rel="noopener noreferrer"
-    class="animated-gradient-text">
+  <a href="https://drive.google.com/file/d/1MklFh7Xqyr42R_m7-aggisVhBUbzGqU1/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="animated-gradient-text">
     <div class="gradient-bg"></div>
     <span class="content">
       📑
