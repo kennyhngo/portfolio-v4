@@ -68,6 +68,6 @@ const aboutText = [
 
   "Currently, I'm focused on becoming highly proficient across the full stack: frontend, backend, and cloud technologies. My goal is to build a project-based learning web app that will teach aspiring programmers how to code with hands-on projects.",
 
-  "Outside of coding, I enjoy tai chi, martial parts, playing pickleball, and personal training at the gym. I'm always exploring new hobbies and experiences to grow as a developer and as a person."
+  "Outside of coding, I enjoy tai chi, martial arts, playing pickleball, and personal training at the gym. I'm always exploring new hobbies and experiences to grow as a developer and as a person."
 ];
 </script>
