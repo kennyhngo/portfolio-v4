@@ -31,6 +31,7 @@
 </template>
 
 <script setup lang="ts">
+import coachingLogo from '@/assets/coach.png';
 import fullStackLogo from '@/assets/full-stack.svg';
 import gamePluginLogo from '@/assets/game-plugin.svg';
 import pickleballLogo from '@/assets/pickleball.svg';
@@ -53,7 +54,7 @@ const services: Service[] = [
     src: gamePluginLogo,
     alt: 'Video game plugin logo',
     title: 'Video Game Modding',
-    text: 'Reverse engineering game code to have extra fun with friends in private lobbies.'
+    text: 'Reverse engineering game code to have extra fun with friends in private lobbies.',
   },
   {
     src: pickleballLogo,
@@ -61,6 +62,12 @@ const services: Service[] = [
     title: 'Pickleball',
     text: 'I play pickleball almost every day, aiming to win a state or regional tournament.',
   },
+  {
+    src: coachingLogo,
+    alt: 'Pickleball Coach Logo',
+    title: 'Pickleball Coach',
+    text: 'I work with players of all levels, helping them improve one part of their game at a time.',
+  }
 ];
 
 const aboutText = [
@@ -68,6 +75,6 @@ const aboutText = [
 
   "Currently, I'm focused on becoming highly proficient across the full stack: frontend, backend, and cloud technologies. My goal is to build a project-based learning web app that will teach aspiring programmers how to code with hands-on projects.",
 
-  "Outside of coding, I enjoy tai chi, martial arts, playing pickleball, and personal training at the gym. I'm always exploring new hobbies and experiences to grow as a developer and as a person."
+  "Outside of coding, I'm always exploring new hobbies and experiences to grow as a developer and as a person. I currently enjoy tai chi, martial arts, and playing pickleball. I do a lot of coaching sessions with players of all levels, aimimg to be licensed in coaching in the close future!"
 ];
 </script>
