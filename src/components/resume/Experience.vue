@@ -30,13 +30,25 @@
 <script setup lang="ts">
 const experiences= [
   {
+    company: 'Brooksource',
+    location: 'Grand Rapids, MI',
+    title: 'Software Engineer',
+    date: 'Jul. 2025 — Present',
+    description: [
+      'Improved data flow between SAP and internal systems by 100% by refining workflows and synchronization logic, eliminating manual intervention previously required to fix stuck or duplicate order records.',
+      'Restored missing product images for Instacart by sanitizing invalid URLs, increasing image display success from 0% to 100% and improving merchandising consistency.',
+      'Prevented system slowdowns by redesigning the store transfer workflow to release unused records, reducing data lockouts and improving transaction speed across stores.',
+      'Improved data reliability across systems by rebuilding product image synchronization, ensuring 100% consistency between internal databases and upstream sources.'
+    ]
+  },
+  {
     company: 'Gordon Food Service',
     location: 'Grand Rapids, MI',
     title: 'Associate Software Engineer',
     date: 'Sep. 2024 — May 2025',
     description: [
       'Delivered bug fixes and feature enhancements in ABLProgress, deploying production-ready code through a gated workflow requiring sysadmin and manager approvals',
-      'Created Python scripts to automate POS support tasks(SFTP transfers, file generation, templated messages), saving ~5-10 hours / week for the support team',
+      'Created Python scripts to automate POS support tasks (SFTP transfers, file generation, templated messages), saving ~5-10 hours / week for the support team',
       'Independently owned resolution of sales loading errors in Toshiba POS logs, modifying production files and coordinating with the sales accounting team',
       'Promoted to Subject Matter Expert in sales loading support, enabling a senior teammate to offload responsibilities and improving team Jira documentation rate',
     ]
