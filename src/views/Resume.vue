@@ -1,7 +1,7 @@
 <template>
 <article class="resume active" data-page="resume">
   <header>
-    <h2 class="h2 article-title">Resume</h2>
+    <h2 class="h2 article-title">Curriculum Vitae</h2>
   </header>
 
   <ResumeFile />
