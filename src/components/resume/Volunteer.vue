@@ -15,7 +15,7 @@
       </h4>
       <p class="text-orange-yellow-crayola" style="margin-bottom: 0.25rem">
         {{ vol.role }}
-        <span class="float-right">🗓️ {{ vol.date }}</span>
+        <span class="float-right">🗓️ {{ DateRangeFormatter.format(vol.dates) }}</span>
       </p>
       <div class="timeline-text">
         <ul>
@@ -28,12 +28,25 @@
 </template>
 
 <script setup lang="ts">
-const volunteer = [
+import type { DateRange } from '../../util/date';
+import { DateRangeFormatter } from '../../util/date';
+
+type Volunteer = {
+  institution: string;
+  location: string;
+  role: string;
+  dates: DateRange;
+  description?: string[];
+}
+
+const volunteer: Volunteer[] = [
   {
     institution: 'Golden Tiger Kung Fu Academy',
     location: 'Grand Rapids, MI',
     role: 'Web Developer',
-    date: 'Apr. 2025 — Present',
+    dates: {
+      start: new Date('2025-04-10')
+    },
     description: [
       'Collaborated with Master Han Mei to maintain and update the institute\'s WordPress website, ensuring accurate and user-friendly content through revised class schedules, updated biographies, and removal of outdated links',
       'Enhanced site navigation and UI consistency to improve user experience and engagement',
