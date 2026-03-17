@@ -14,3 +14,5 @@ I initially joined the [Golden Tiger Kung Fu Academy](https://gtkfa.com/) to lea
 <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FGTKFA%2Fvideos%2F1014205393709569%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
 I'm the one in the yellow lion costume 🙂
+
+(Edit: March 2026 - the owner has requested to take down the video due to Copyright reasons, sorry!)
